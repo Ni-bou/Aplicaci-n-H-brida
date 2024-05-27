@@ -1,0 +1,41 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+ 
+
+<ion-content [fullscreen]="true" class="ion-padding">
+ <div class= "ion-text-center">
+    <div class="bold-title">
+      <h1>SkeletonAPP</h1>
+    </div>
+    <h4>Aquí comienza todo</h4>
+  </div>
+  <div class= "ion-text-center">
+      <ion-card>
+      <br />
+        <ion-title size="large">Bienvenido!</ion-title>
+        <ion-card-content>
+          <ion-item>
+          <!--usamos ngModel para indicarle al input el objeto a utilizar-->
+            <ion-input label="Nombre Usuario" label-placement="floating" fill="outline" placeholder="Enter user" [(ngModel)]="user.usuario" maxlength="8" minlength="3" [(ngModel)]="user.password"></ion-input>
+          </ion-item> ></ion-input>
+          </ion-item>
+          <br />
+          <ion-item>
+            <ion-input type="password" label="Password" label-placement="floating" fill="outline" placeholder="Password" maxlength="4" [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+
+        </ion-card-content>
+        <ion-button expand = "block"> Ingresar</ion-button>
+      </ion-card>
+  </div>
+</ion-content>
+
+  <ion-footer>
+  <ion-toolbar>
+    <ion-title> App desarrollado por Dennisse Reveco </ion-title>
+  </ion-toolbar>
+  </ion-footer>
